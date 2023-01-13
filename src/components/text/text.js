@@ -3,9 +3,14 @@ import "./text.css"
 import { AiFillCaretDown } from "react-icons/ai";
 
 const Text =({panel})=>{
-    const [disp, setDisp] = useState(false);
-    const extra_styles = (disp) => {
-        if (disp) {
+    const [disp, setDisp] = useState({});
+    const toggle_disp =(item)=>{
+        setDisp(!disp)
+        item.display = !item.display
+    }
+
+    const extra_styles = (check) => {
+        if (check) {
             return {
                 display:"block"
             };
@@ -24,9 +29,9 @@ const Text =({panel})=>{
            <div key={item.key} className="panel">
               <div className="panel-title">
                   <p>{item.title}</p>
-                  <AiFillCaretDown className="panel-icon" onClick={()=>setDisp(!disp)}/>
+                  <AiFillCaretDown className="panel-icon" onClick={()=>toggle_disp(item)}/>
               </div>
-                <p className="panel-text" style={extra_styles(disp)}>{item.txt}</p>          
+                <p className="panel-text" style={extra_styles(item.display)}>{item.txt}</p>          
             </div>
                 )
         } )}
