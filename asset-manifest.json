@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Simple-accordion/static/css/main.1b73a5ff.css",
+    "main.js": "/Simple-accordion/static/js/main.83484d4b.js",
+    "index.html": "/Simple-accordion/index.html",
+    "main.1b73a5ff.css.map": "/Simple-accordion/static/css/main.1b73a5ff.css.map",
+    "main.83484d4b.js.map": "/Simple-accordion/static/js/main.83484d4b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b73a5ff.css",
+    "static/js/main.83484d4b.js"
+  ]
+}
